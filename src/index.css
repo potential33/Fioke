@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	background: #f6f6f6;
+	overflow: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.container .btn {
+    display: none;
+	margin-top: 20px;
+	display: inline-block;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	background: #00a8ff;
+	color: #fff;
+	cursor: pointer;
+}
+
+.container .btn:hover {
+	background: #0097e6;
+}
+
+/*******SIDEBAR SIDEBAR SIDEBAR******/
+.cola{
+  display: flex;
+  flex-direction: column;
+  
+  align-items: flex-start;
+  position: absolute;
+  background-color: white;
+  height: 100%;
+  width: 70%;
+}
+
+.cola  ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+/*🛢️🛢️🛢️🛢️🛢️🛢️🛢️🛢️🛢🛢️🛢️🛢️🛢️*/
+nav {
+	background: #fff;
+	padding: 10px;
+	width: 100%;
+	/*i add this it may cause prob later*/
+	height: 50%;
+}
+.nav-items img{
+    width: 8%;
+    height: 8%;
+    object-fit: contain;
+    margin-right: 8px;
+}
+
+.logo p{
+	
+}
+.sbar img{
+    width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 200;
+  border: 1px solid #000000;
+  padding: 5px;
+  height: 30px;
+  border-radius:8px;
+  outline: none;
+  color: #9DBFAF;
+  background-image: url("Components/search.svg");
+  background-position:right center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+nav .nav-items {
+	display: flex;
+	justify-content: space-between;
+	height: 20%;
+	align-items: center;
+}
+.nav-items ul {
+    display: none;
+}
+
+
+/******$-$-$-$;$($)#+$-$+$!$-$-$-$-*/
+.banner-container {
+	padding: 100px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.banner {
+	font-family: 'Lovers Quarrel', cursive;
+	font-size: 100px;
+	background: #fff;
+	padding: 0 20px;
+	width: 100%;
+	height: 50vh;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.banner-container .btn {
+	font-family: 'Poppins', sans-serif;
+	background: #00a8ff;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.banner-container .btn:hover {
+	background: #0097e6;
+}
+
+.container .title {
+	color: #00a8ff;
+	font-size: 30px;
+	font-weight: 600;
+	margin: 40px 0;
+}
+
+.cocktails-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 30px;
+	margin: 20px 0;
+}
+
+.cocktails-container .cocktail-card {
+	background: #fff;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease-in-out;
+}
+
+.cocktails-container .cocktail-card:hover {
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cocktail-card .cocktail-img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.cocktail-card .cocktail-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.cocktail-info .cocktail-name {
+	font-size: 25px;
+	font-weight: 600;
+	color: #000;
+}
+
+.cocktail-info .btn {
+	background: #00a8ff;
+	color: #fff;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 16px;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.cocktail-info .btn:hover {
+	background: #0097e6;
+}
+
+/* error component styling */
+
+.error-page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 20px;
+	height: 60vh;
+}
+
+.error-page .error-code {
+	font-size: 150px;
+	font-weight: 600;
+	color: #00a8ff;
+}
+
+.error-page .error-text {
+	font-size: 34px;
+	font-weight: 600;
+	color: #000;
+}
+
+/* Single Product */
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+
+.flex-container .cocktail-img {
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+	object-position: center;
+	border: 5px solid #00a8ff;
+	border-radius: 5px;
+}
+
+.cocktail-infos .row {
+	margin: 10px 0;
+}
+
+.cocktail-infos .row .label {
+	font-size: 18px;
+	font-weight: 600;
+	color: #000;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+@media (min-width: 800px){
+    .logo p{
+	font-weight: 600;
+	font-size: 15px;
+}
+
+    .nav-items img{
+    display: none;
+}
+    .nav-items .sidi{
+    display: none;
+}
+    .nav-items ul {
+    display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.nav-items ul li {
+	list-style: none;
+	margin-left: 20px;
+	/**** font size on sm 14px*****/
+}
+
+.nav-items ul li a {
+	color: #000;
+}
+
+.nav-items ul li a:hover {
+	color: #00a8ff;
+}
+
+.nav-items ul li a.active {
+	color: #00a8ff;
+}
+}
+
+@media (max-width: 640px){
+    /*the space down is way too much*/
+    .cocktails-container{
+              display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        padding: 4px;
+    
+    }
+    
+    /*¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥*/
+    .cocktails-container .cocktail-card {
+        display: flex;
+    flex-direction: column; /* Stack image and content vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: space-between; /* Distribute space evenly between image and content */
+    text-align: center; /* Center text content */
+    width: 100%;
+    height: 60%;
+    border: 2px solid #007bff;
+    margin: 5px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+/*iiiiiiiiimmmaaaagggeeeeeeee*/
+.cocktail-card .cocktail-img {
+	width: 100%; 
+    background-size: cover; 
+	object-fit: cover;
+	object-position: center;
+}
+
+
+.cocktail-info .cocktail-name {
+	font-size: 10px;
+	font-weight: 600;
+	color: #000;
+}
+
+.cocktail-info .btn {
+	background: #00a8ff;
+	color: #fff;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 5px;
+	/*na 16*/
+	font-size: 10px;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+
+}
